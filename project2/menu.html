@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Menu</title>
+    <link rel="stylesheet" href="./menu.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img src="./images/logo.jpg" alt="logo" class="logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./about.html" id="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./menu.html" id="menu">Menu</a>
+            </li>
+          </ul>
+          <button class="button me-4"><a href="./signin.html" id="signin">sign in</a></button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/header-menu.png"
+            class="d-block w-100 hero-img"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <p class="fs-1 fw-bolder">Our Menu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="container" id="menu">
+      <ul
+        class="nav nav-pills mt-5 mb-4 justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            All Items
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            Breakfast
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Lunch
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-disabled-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-disabled"
+            type="button"
+            role="tab"
+            aria-controls="pills-disabled"
+            aria-selected="false"
+          >
+            Dinner
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <!-- All -->
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+        tabindex="0"
+      >
+        <div class="container-fluid ps-5">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title mt-2">Veg Sandwich</h5>
+                  <button class="add me-2">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title mt-2">Veg Salad</h5>
+                  <button class="add me-2">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title mt-2">Veg Flower Mix</h5>
+                  <button class="add me-2">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title mt-2">Veg Spicy</h5>
+                  <button class="add me-2">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg cheese Banista</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Paneer Roll</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Pulao</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Mix Rice</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_9.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Non-Veg Egg Rice</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/food_10.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Noodles</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/food_11.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Pasta</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/food_12.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Non-Veg Fish</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breakfast -->
+      <div
+        class="tab-pane fade"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+        tabindex="0"
+      >
+        <div class="container-fluid ps-5">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Sandwich</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Salad</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Flower Mix</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Spicy</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lunch -->
+      <div
+        class="tab-pane fade"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+        tabindex="0"
+      >
+        <div class="container-fluid ps-5">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Cheese Banista</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Paneer Roll</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Pulao</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Mix Rice</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dinner -->
+      <div
+        class="tab-pane fade"
+        id="pills-disabled"
+        role="tabpanel"
+        aria-labelledby="pills-disabled-tab"
+        tabindex="0"
+      >
+        <div class="container-fluid ps-5">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img src="./images/food_9.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Non-Veg Egg Rice</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/food_10.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Noodles</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/food_11.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Veg Pasta</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/food_12.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <img src="./images/rating_starts.png" alt="" />
+                  <h5 class="card-title">Non-veg Fish</h5>
+                  <button class="add">Add</button>
+                  <button class="remove">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid footer mt-5">
+      <div class="row d-flex justify-content-around">
+        <div class="col-lg-4 pb-5">
+          <h2 class="mt-4">Fast Food Delivery</h2>
+          <p>
+            Our mission is to satisfy your cravings and elevate your dining
+            experience, one delicious meal at a time.
+          </p>
+          <img src="./images/facebook_icon.png" alt="" id="facebook"/>
+          <img src="./images/twitter_icon.png" alt="" id="twitter"/>
+          <img src="./images/linkedin_icon.png" alt="" id="linkedin"/>
+        </div>
+
+        <div class="col-lg-4">
+          <h2 class="mt-4">Contact</h2>
+          <p>
+            Phone No. : 9987654321 <br />
+            E-mail : xyz@gmail.com <br />
+            Address : Mahavir Sthan, Rampur, Bihar, Bharat
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
